@@ -42,3 +42,6 @@ def submit_form():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+
+# This line is crucial for Gunicorn to find your app
+application = app
